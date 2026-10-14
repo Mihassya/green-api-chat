@@ -9,7 +9,7 @@ export function MessageBubble({ message }: { message: Message }) {
   return (
     <div className={`flex ${outgoing ? 'justify-end' : 'justify-start'}`}>
       <div
-        className={`max-w-[75%] rounded-2xl px-3.5 py-2 text-[15px] leading-snug shadow-sm ${
+        className={`max-w-[min(75%,36rem)] rounded-2xl px-3.5 py-2 text-[15px] leading-snug shadow-sm ${
           outgoing
             ? 'rounded-br-md bg-brand text-white'
             : 'rounded-bl-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100'

@@ -73,7 +73,7 @@ export function ChatWindow({ className = '' }: { className?: string }) {
 
 			<div className='chat-wallpaper min-h-0 flex-1'>
 				<div className='h-full overflow-y-auto px-4 py-4'>
-					<div className='mx-auto flex max-w-3xl flex-col gap-1.5'>
+					<div className='flex flex-col gap-1.5'>
 						{chatMessages.length === 0 && (
 							<p className='mx-auto mt-6 rounded-lg bg-white/80 px-3 py-1.5 text-sm text-slate-500 dark:bg-slate-800/80 dark:text-slate-400'>
 								Напишите первое сообщение
