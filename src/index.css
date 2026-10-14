@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-slate-100 font-sans text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
+
+.chat-wallpaper {
+	position: relative;
+	isolation: isolate;
+	background-color: #efeae2;
+}
+
+.chat-wallpaper::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-color: rgb(84 74 60 / 0.09);
+	-webkit-mask: url('/doodles.svg') repeat 0 0 / 220px;
+	mask: url('/doodles.svg') repeat 0 0 / 220px;
+}
+
+.dark .chat-wallpaper {
+	background-color: #0b141a;
+}
+
+.dark .chat-wallpaper::before {
+	background-color: rgb(255 255 255 / 0.05);
+}
